@@ -15,7 +15,7 @@ Department of Radiology, LMU University Hospital, LMU Munich · Munich Center fo
 Deep learning can segment PET/CT lesions on curated data. My thesis asks two questions that curated benchmarks leave open: **does it generalize to clinical variation**, and **does segmentation accuracy predict clinical usefulness?** Using the autoPET challenges as controlled experiments and a downstream NSCLC staging study, I find:
 
 - Current methods remain sensitive to clinically relevant distribution shifts (centers, pediatric populations, PSMA tracer).
-- The dominant failure mode is false positives from physiological uptake and anatomy underrepresented in training, not poor lesion detection.
+- The dominant failure mode is false positives from physiological uptake and anatomy underrepresented in training, not solely poor lesion detection.
 - Patient characteristics explain **61%** of unexplained DSC variance; the choice of algorithm explains **1.3%**.
 - Segmentation accuracy is a poor predictor of staging errors: a physician staging solely from automated masks reached the wrong UICC stage in **99 / 306** NSCLC cases, 63 of which flipped treatment intent between curative and palliative.
 
@@ -58,7 +58,7 @@ Deep learning can segment PET/CT lesions on curated data. My thesis asks two que
 | autoPET I     | Proof of concept, whole-body FDG-PET/CT          | MICCAI 2022 | [autopet.grand-challenge.org](https://autopet.grand-challenge.org/Description/) |
 | autoPET II    | Domain generalization                            | MICCAI 2023 | [autopet-ii.grand-challenge.org](https://autopet-ii.grand-challenge.org/) |
 | autoPET III   | Multitracer multicenter generalization           | MICCAI 2024 | [autopet-iii.grand-challenge.org](https://autopet-iii.grand-challenge.org/) |
-| autoPET/CT IV | Interactive lesion segmentation, longitudinal CT | MICCAI 2025 | [autopet-iv.grand-challenge.org](https://autopet-iv.grand-challenge.org/) |
+| autoPET IV    | Interactive lesion segmentation, longitudinal CT | MICCAI 2025 | [autopet-iv.grand-challenge.org](https://autopet-iv.grand-challenge.org/) |
 | autoPET V     | Clinician-in-the-loop interactive segmentation   | MICCAI 2026 | [autopet-v.grand-challenge.org](https://autopet-v.grand-challenge.org/) |
 
 Series homepage: [autopet.org](https://www.autopet.org/)
